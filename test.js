@@ -5,3 +5,10 @@ window.onload = function() {
         document.getElementById('greeting').style.display = 'block';
     }, 1000); // Adjust the time (in milliseconds) as needed
 };
+
+const popup = document.getElementsByClassName(mypopup);
+const open = document.getElementsByClassName(box);
+
+open.addEventListner('click', () => {
+    popup.showModal();
+})
